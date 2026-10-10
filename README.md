@@ -1,39 +1,36 @@
 # FLAC3D-Examples
+**English** | [简体中文](README.zh-CN.md)
+**Reproducible Numerical Simulation Examples for Mining Engineering**
 
-[English](README.md) | **简体中文**
+A structured collection of FLAC3D and FISH examples for mining engineering, focusing on roadway excavation, rock mechanics, ground support, stress analysis, and mining-induced deformation.
 
-**面向采矿工程的可复现数值模拟案例库**
+本项目用于整理采矿工程中的 FLAC3D 数值模拟案例，逐步建立可复现、可扩展的工程计算案例库。
 
-本项目用于整理采矿工程中的 FLAC3D 与 FISH 数值模拟案例，逐步建立一个可复现、可扩展的工程计算案例库。
+## Objectives
 
-项目主要关注巷道开挖、岩石力学、围岩支护、应力分析以及采动变形等问题。
+- Build reusable FLAC3D numerical simulation examples.
+- Document model geometry, material parameters, boundary conditions, and solution procedures.
+- Explore roadway excavation and ground support simulation.
+- Develop FISH scripts for model automation and result processing.
+- Provide reproducible examples for engineering research and learning.
 
-## 项目目标
+## Topics
 
-- 建立可重复使用的 FLAC3D 数值模拟案例。
-- 记录模型几何、材料参数、边界条件及求解过程。
-- 探索巷道开挖与围岩支护数值模拟。
-- 使用 FISH 脚本实现模型自动化与结果处理。
-- 为工程研究和学习提供可复现案例。
-
-## 主要内容
-
-| 模块 | 说明 |
+| Module | Description |
 |---|---|
-| 基础模型 | 模型几何、网格划分及边界条件 |
-| 巷道开挖 | 巷道几何建模及分步开挖 |
-| 岩石力学 | 本构模型及岩体力学参数 |
-| 围岩支护 | 锚杆、锚索及支护系统 |
-| 应力分析 | 应力重分布及位移分析 |
-| 采矿模拟 | 采动变形及围岩响应 |
-| FISH 脚本 | 模型自动化及自定义计算 |
+| Basic Models | Model geometry, zoning, and boundary conditions |
+| Roadway Excavation | Roadway geometry and excavation sequences |
+| Rock Mechanics | Constitutive models and material parameters |
+| Ground Support | Rock bolts, cables, and support systems |
+| Stress Analysis | Stress redistribution and displacement analysis |
+| Mining Engineering | Mining-induced deformation and surrounding-rock response |
+| FISH Scripting | Model automation and custom calculations |
 
-## 仓库结构
+## Repository Structure
 
 ```text
 FLAC3D-Examples/
 ├── README.md
-├── README.zh-CN.md
 ├── LICENSE
 ├── .gitignore
 ├── 01-basic-model/
@@ -44,3 +41,48 @@ FLAC3D-Examples/
 ├── 06-mining-simulation/
 ├── 07-fish-scripting/
 └── docs/
+```
+
+Each example will include, where applicable:
+
+- `README.md` — problem description and execution instructions
+- `model.dat` — FLAC3D model commands
+- `fish.dat` — FISH functions and automation scripts
+- `results/` — selected simulation outputs or figures
+
+## Example Documentation Standard
+
+Each documented case should specify:
+
+1. Engineering problem and modeling assumptions
+2. Model dimensions and geometry
+3. Rock mass parameters and constitutive model
+4. Boundary conditions and initial stress
+5. Excavation and support procedures
+6. Calculation commands and convergence checks
+7. Displacement, stress, and plasticity results
+8. Software version and reproducibility notes
+
+## Requirements
+
+- FLAC3D: use a compatible version specified by each example.
+- FISH: use syntax supported by the corresponding FLAC3D version.
+- Python: optional, for data processing, visualization, and automation.
+
+## Validation and Limitations
+
+Examples are intended for learning, research, and numerical simulation development. Model assumptions, units, boundary conditions, constitutive models, and convergence must be checked before interpreting results.
+
+These examples do not replace site-specific geological investigation, engineering verification, or professional design review.
+
+## License
+
+This project is released under the MIT License. Refer to `LICENSE` for details.
+
+## Language
+
+Documentation may be provided in English and Chinese to support international collaboration and practical engineering use.
+
+---
+
+**Project focus:** Mining Engineering · FLAC3D · FISH · Numerical Simulation · Ground Support我想的是能够切换，而不是直接展示
